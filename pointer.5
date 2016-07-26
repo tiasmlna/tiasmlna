@@ -1,0 +1,19 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int a(const char *b)
+{
+ int x=0;
+ for(; *b!='\0'; b++)
+ ++x;
+ return x;
+}
+main()
+{
+ char huruf[150];
+ cout<<"Menghitung Jumlah Nama \n\n";
+ cout<<"Input Nama : "; cin.getline(huruf,150);
+ cout<<"\nJumlah Nama dari kalimat diatas adalah : "<<a(huruf)<<"  Karakter"<<endl;
+ getch();
+}
